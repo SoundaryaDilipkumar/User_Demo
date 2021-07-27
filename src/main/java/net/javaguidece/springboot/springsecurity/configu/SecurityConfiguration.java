@@ -46,6 +46,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     public BCryptPasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }
+	  @Bean
+    public BCryptPasswordEncoder passwordEncoder1(){
+        return new BCryptPasswordEncoder();
+    }
+
 
     @Bean
     public DaoAuthenticationProvider authenticationProvider(){
